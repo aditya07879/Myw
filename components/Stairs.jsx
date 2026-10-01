@@ -16,7 +16,7 @@ const Stairs = () => {
           x: "0%",
           transition: { duration: 0.6, ease: "easeInOut" },
         }}
-        className="fixed inset-y-0 left-0 w-1/2 bg-background z-50 pointer-events-none"
+        className="fixed inset-y-0 left-0 w-1/2 bg-[#FFC900] border-r-4 border-black z-50 pointer-events-none"
       />
 
       {/* Right panel */}
@@ -30,7 +30,7 @@ const Stairs = () => {
           x: "0%",
           transition: { duration: 0.6, ease: "easeInOut" },
         }}
-        className="fixed inset-y-0 right-0 w-1/2 bg-background z-50 pointer-events-none"
+        className="fixed inset-y-0 right-0 w-1/2 bg-[#FF90E8] border-l-4 border-black z-50 pointer-events-none"
       />
     </>
   );

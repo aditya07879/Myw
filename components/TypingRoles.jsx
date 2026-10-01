@@ -41,9 +41,9 @@ const TypingRoles = ({ speed = 120, pause = 1200 }) => {
   }, [charIndex, deleting, roleIndex, speed, pause]);
 
   return (
-    <span className="text-accent">
+    <span className="inline-block -rotate-1 min-w-[1.5ch] whitespace-nowrap bg-[#FFC900] text-black border-2 border-ink px-3 text-[0.85em] sm:text-[1em] shadow-[4px_4px_0_0_var(--sh)] [text-shadow:none]">
       {text}
-      <span className="ml-1 animate-pulse">|</span>
+      <span className="ml-1 inline-block h-[0.8em] w-[0.12em] translate-y-[0.05em] bg-black animate-pulse" />
     </span>
   );
 };

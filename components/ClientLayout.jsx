@@ -14,7 +14,7 @@ export default function ClientLayout({ children }) {
       </PageTransition>
 
       {/* floating theme toggle */}
-      <ThemeToggle />
+      
     </>
   );
 }

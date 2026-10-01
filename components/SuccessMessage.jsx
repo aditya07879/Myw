@@ -7,6 +7,7 @@ export default function SuccessMessage({ show }) {
     <AnimatePresence>
       {show && (
         <motion.div
+          role="status"
           initial={{ opacity: 0, y: -20, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -20, scale: 0.95 }}
@@ -19,17 +20,18 @@ export default function SuccessMessage({ show }) {
             z-50
             w-[90%]
             max-w-md
-            rounded-xl
-            bg-[#1f2933]
-            border border-green-500/40
-            px-6 py-4
-            shadow-2xl
-            backdrop-blur
+            bg-[#7CE8A4]
+            text-black
+            border-2 border-black
+            shadow-[6px_6px_0_0_#000]
+            px-5 py-4
           "
         >
           <div className="flex items-center gap-3">
-            <span className="text-2xl">✅</span>
-            <p className="text-green-400 text-base font-medium">
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center border-2 border-black bg-white text-xl font-extrabold">
+              ✓
+            </span>
+            <p className="text-base font-bold">
               Message sent successfully!
             </p>
           </div>
