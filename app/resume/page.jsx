@@ -95,7 +95,7 @@ const experience = {
       location: "Gwalior, Madhya Pradesh, India (On-site)",
       description:
         "Handled high-volume transactions with a focus on fiscal accuracy. Optimized front-end throughput, maintained zero-discrepancy cash drawers, and delivered strong service recovery to build customer loyalty.",
-      skills: ["Cash Management", "Point of Sale (POS) Systems"],
+      skills: ["Cash Management", "Point of Sale (POS) Systems","Problem Solving", "Customer Handling"],
     },
   ],
 };
