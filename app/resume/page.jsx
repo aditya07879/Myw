@@ -12,7 +12,14 @@ import {
   FaBriefcase,
   FaExternalLinkAlt,
 } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiPostgresql, SiGooglegemini, SiNestjs, SiRedis } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiMongodb,
+  SiPostgresql,
+  SiGooglegemini,
+  SiNestjs,
+  SiRedis,
+} from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -41,7 +48,11 @@ const about = {
     { fieldName: "Languages:", fieldValue: "English, Hindi" },
     { fieldName: "X:", fieldValue: "@aditya_07879" },
     { fieldName: "Freelance:", fieldValue: "Available" },
-    { fieldName: "Email:", fieldValue: "adityatomar07879@gmail.com", wide: true },
+    {
+      fieldName: "Email:",
+      fieldValue: "adityatomar07879@gmail.com",
+      wide: true,
+    },
   ],
 };
 
@@ -57,6 +68,23 @@ const experience = {
   description: "Where I've worked so far.",
   emptyText: "No corporate working experience till now.",
   items: [
+    {
+      logo: "/logos/abkps.png", // update to your actual logo file path
+      company: "Abkps Outsourcing Private Limited",
+      role: "Front Desk Executive",
+      type: "Full-time",
+      duration: "Oct 2026 - Present",
+      location: "Gwalior, Madhya Pradesh, India (On-site)",
+      description:
+        "Manage front desk operations and serve as a point of contact for international clients. Handle guest and client communication, support day-to-day hotel operations, and use hotel management tools like Grizlu and HotelKey to keep bookings and records accurate.",
+      skills: [
+        "International Client Relations",
+        "Grizlu",
+        "HotelKey",
+        "Hotel Operations",
+        "Communication",
+      ],
+    },
     {
       logo: "/logos/reliance.jpg", // e.g. "/logos/reliance.png"
       company: "Reliance Retail",
@@ -174,7 +202,9 @@ function CompanyLogo({ src, name }) {
   }
 
   return (
-    <div className={`${BORDER} relative shrink-0 w-16 h-16 bg-white overflow-hidden`}>
+    <div
+      className={`${BORDER} relative shrink-0 w-16 h-16 bg-white overflow-hidden`}
+    >
       <Image
         src={src}
         alt={`${name} logo`}
@@ -269,11 +299,15 @@ export default function Resume() {
 
                           <div className="flex flex-col gap-2 min-w-0">
                             <div className="flex flex-wrap gap-2">
-                              <span className={`${BORDER} bg-[#FF90E8] px-2 py-0.5 text-sm font-bold`}>
+                              <span
+                                className={`${BORDER} bg-[#FF90E8] px-2 py-0.5 text-sm font-bold`}
+                              >
                                 {item.duration}
                               </span>
                               {item.type && (
-                                <span className={`${BORDER} bg-white px-2 py-0.5 text-sm font-bold`}>
+                                <span
+                                  className={`${BORDER} bg-white px-2 py-0.5 text-sm font-bold`}
+                                >
                                   {item.type}
                                 </span>
                               )}
@@ -329,7 +363,9 @@ export default function Resume() {
                         className={`${BORDER} ${SHADOW} ${FILLS[index % FILLS.length]} text-black min-h-[184px] py-6 px-6 sm:px-10 flex items-center justify-between gap-4`}
                       >
                         <div className="flex flex-col gap-2 min-w-0">
-                          <span className={`${BORDER} bg-white w-fit px-2 py-0.5 text-sm font-bold`}>
+                          <span
+                            className={`${BORDER} bg-white w-fit px-2 py-0.5 text-sm font-bold`}
+                          >
                             {item.duration}
                           </span>
                           <h3 className="text-xl font-extrabold leading-tight">
@@ -405,8 +441,8 @@ export default function Resume() {
                           item.wide
                             ? "bg-[#90A8ED]"
                             : index % 2 === 0
-                            ? "bg-[#FF90E8]"
-                            : "bg-[#FFC900]"
+                              ? "bg-[#FF90E8]"
+                              : "bg-[#FFC900]"
                         }`}
                       >
                         {item.fieldName.replace(/:$/, "")}
