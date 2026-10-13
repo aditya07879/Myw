@@ -83,6 +83,7 @@ const experience = {
         "HotelKey",
         "Hotel Operations",
         "Communication",
+        "Calling Dashboard",
       ],
     },
     {
